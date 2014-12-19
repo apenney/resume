@@ -1,0 +1,120 @@
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Ashley Penney} % Your name
+\address{49 Burma Road, Fitchburg, MA, 01420} % Your address
+\address{(617)~$\cdot$~600~$\cdot$~8086 \\ apenney@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Puppet Labs}{July 2013 -- Present}{Senior Software Engineer}{Portland, OR}
+\item[] The module team is responsible for writing and maintaining over seventy Puppet modules, including several of the most popular Puppet modules in existence, such as stdlib, apache, mysql, postgresql, and F5.  Over the last year I've been instrumental in launching several key projects as well as proposing and winning approval for two more key initiatives to build a development community for modules and to launch our "Approved Modules" program to identify key quality modules.
+
+\item We launched the Supported Modules program.  This is the first vendor backed supported modules program on the market.  In preparation for this I personally redesigned, refactored, and rewrote some of our most critical modules.  This included our F5 module, which is one of the largest and most complex in existence.
+\item I designed our testing strategy and worked with the team to build thousands of unit and acceptance tests across our modules in order to validate them across 27 supported Puppet Enterprise platforms.
+\item In order to help our community build great modules I took ownership of the documentation around modules.  I wrote, and released, our "Beginners Guide to Modules" as well as an expanded "Advanced Guide to Modules."  I've also written blog posts, overhauled the documentation of our key modules, and worked directly with community members to set direction around documentation.
+\item Launched a weekly triage meeting with our community to evaluate, and merge or reject, pull requests to modules.  Over the last year we've triaged over 2000 pull requests.
+\item Refactored some code within Puppet itself, such as yumrepo, to improve our modules.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Jumptap}{March 2013 - June 2013}{Senior Systems Administrator}{Boston, MA}
+\item[] I joined Jumptap to teach the operations team devops practices and to improve their ability to support a large
+clustered trading and advertising platform.
+
+\item Restructured the daily workflow for the operations team to improve internal communication and tracking of work in progress.
+\item Worked with the devops team to rebuild much of the Puppet environment, replace Perforce with Github Enterprise, evaluate Openstack and launch a deployment system.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{EdX}{October 2012 - March 2013}{Devops Engineer}{Cambridge, MA}
+\item[] Bringing my prior Puppet experience to EdX I was able to help the team turn around a difficult automation situation.  I started by rebuilding the Puppet infrastructure from scratch by rewriting all the existing code, and then moved to building Fabric tasks to automate our cloud provisioning and maintenance and our code deployment.
+
+\item Took ownership of writing weekly reports to the leadership team to improve our internal visibility within the organization.
+\item Introduced Kanban and Agile into the team to help us identify and resolve bottlenecks in our infrastructure delivery pipeline.
+\item Worked with development to scope, build, and test some enhancements to the EdX platform to allow for third party integrations and sandboxing of externally submitted student code.  We also launched several services for engineering, such as RabbitMQ clusters and Splunk.
+\end{rSubsection}
+
+\begin{rSubsection}{SilverSky}{June 2011 - October 2012}{Team Lead, Operations}{Boston, MA}
+\item[] Leading a devops team of three I built a new RHEL based environment to provision and fully automate over 250 servers.  Once this was launched I switched to mentoring junior members of operations in devops practices, helping the team to support and eventually expand the automation we built.
+
+\item Built a multi-datacenter distributed Puppet environment with 110 custom modules to handle all existing services within SilverSky.
+\item Organized training sessions for 12 members of operations in devops practices in which they learned to write Puppet modules, unit tests, best practices for provisioning and deployment, and Kanban workflows.
+\item Worked closely with the Boston development team to design and launch an EC2 based development environment used by over thirty engineers.  This included automating and deploying Oracle and other services for on demand instances.
+\end{rSubsection}
+
+\begin{rSubsection}{Harvard Law School}{Febuary 2008 - June 2011}{Senior Systems Administrator}{Cambridge, MA}
+\item[] As part of the operations team at HLS, I introduced automation into the environment for the first time.  I built a rapid provisioning system and used it to rebuild all manually maintained system in a fully automated fashion.
+
+\item I replaced 35 physical servers with 65 virtual servers, which reduced the server build time from 1 week to 10 minutes and decreased OPEX.
+\item Worked closely with external teams, such as the Communications department, to launch the new Harvard Law website.  We did this with zero downtime.
+\item Owned the operations role in the development, deployment, and maintenance of the new identity management system. This system manages all student accounts, information, and lifecycle during their time at HLS.
+\end{rSubsection}
+
+\begin{center}
+Prior roles at: NTT Europe Online, MessageLabs, Tiscali, Yahoo!, Versatel, Interxion, and Speedport.\\
+\textit{Please ask for an expanded resume covering those positions if you're interested in details.}
+\end{center}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & Ruby, Python, Perl, Bash, Scheme (Beginner)\\
+Operating Systems & Linux, FreeBSD, Solaris, OSX, Windows\\
+Software & Git, Apache, MySQL, PostgresQL, Nginx, Tomcat, Splunk, RabbitMQ\\
+Automation & Puppet, Hiera, Facter, Mcollective, Foreman, Pulp, Ansible, Salt, Chef\\
+Virtualization & EC2, Vsphere, Proxmox, KVM\\
+Networking & TCP/IP, Cisco, F5, Firewalls, VPN
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Industry Certificates}
+\item \textbf{RHCE} (Redhat Certified Engineer) --- January 2012
+\item \textbf{RHCSA} (Redhat Certified Systems Administrator) --- January 2012
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
