@@ -30,7 +30,7 @@
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text]{Garamond Premier Pro}
+\setromanfont[Mapping=tex-text]{Adobe Garamond Pro}
 \usepackage[activate={true,nocompatibility},final,tracking=true,factor=1100,stretch=10,shrink=10]{microtype}
 
 %----------------------------------------------------------------------------------------

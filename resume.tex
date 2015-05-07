@@ -26,7 +26,7 @@
 
 \name{Ashley Penney} % Your name
 \address{49 Burma Road, Fitchburg, MA, 01420} % Your address
-\address{(617)~$\cdot$~600~$\cdot$~8086 \\ apenney@gmail.com} % Your phone number and email
+\address{(978)~$\cdot$~489~$\cdot$~4019 \\ apenney@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -36,50 +36,49 @@
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Puppet Labs}{July 2013 -- Present}{Senior Software Engineer}{Portland, OR}
-\item[] The module team is responsible for writing and maintaining over seventy Puppet modules, including several of the most popular Puppet modules in existence, such as stdlib, apache, mysql, postgresql, and F5.  Over the last year I've been instrumental in launching several key projects as well as proposing and winning approval for two more key initiatives to build a development community for modules and to launch our "Approved Modules" program to identify key quality modules.
+\begin{rSubsection}{nToggle}{January 2015 -- Present}{Devops Engineer}{Boston, MA}
+\item[] At nToggle I rejoined several of my Jumptap coworkers to help launch an adtech startup that helps companies filter and route real time bidding traffic to their bidding systems.
 
-\item We launched the Supported Modules program.  This is the first vendor backed supported modules program on the market.  In preparation for this I personally redesigned, refactored, and rewrote some of our most critical modules.  This included our F5 module, which is one of the largest and most complex in existence.
-\item I designed our testing strategy and worked with the team to build thousands of unit and acceptance tests across our modules in order to validate them across 27 supported Puppet Enterprise platforms.
-\item In order to help our community build great modules I took ownership of the documentation around modules.  I wrote, and released, our "Beginners Guide to Modules" as well as an expanded "Advanced Guide to Modules."  I've also written blog posts, overhauled the documentation of our key modules, and worked directly with community members to set direction around documentation.
-\item Launched a weekly triage meeting with our community to evaluate, and merge or reject, pull requests to modules.  Over the last year we've triaged over 2000 pull requests.
-\item Refactored some code within Puppet itself, such as yumrepo, to improve our modules.
+As an initial key hire at nToggle, I am responsible for all aspects of operations; packaging, testing, deployment, and maintenance.  Using containers and Ansible we have a fully automated setup that allows us to transparently deploy into physical and virtual environments.  Most of my time has been spent on performance optimization for our key product, nroute,  a low latency, high throughput, router.  This has required performance measuring and optimization from the kernel up to internals of the JVM.
+\end{rSubsection}
+
+\begin{rSubsection}{Metacloud}{September 2014 -- January 2015}{Senior Software Engineer}{Pasadena, CA}
+\item[] I joined the engineering team at Metacloud to transform the aging QA environment.  This was previously managed by hand and I spent several months building out Chef automation to rebuild and scale out the testing infrastructure.  This eventually led to a migration that reduced testing cycles from full days to less than an hour.  Metacloud was acquired by Cisco during this time.
+\end{rSubsection}
+
+\begin{rSubsection}{Puppet Labs}{July 2013 -- September 2014}{Senior Software Engineer}{Portland, OR}
+\item[] As the first team hire, I was able to initiate and manage key projects that allowed Puppetlabs to build a developer community around the previously ailing, but critical, set of public modules provided by Puppetlabs.
+
+These projects included our "Supported Modules" initiative, the first commercial, vendor backed set of  automation modules.  I redesigned, refactored, and rewrote several of these critical modules.  I also designed our testing strategy and worked with the team to build thousands of unit and acceptance tests across the module base, allowing us to validate them against 27 supported Puppet Enterprise Platforms.
+
+Other work included refactoring core Puppet code, writing several popular guides around building modules, overhauling documentation, and launching weekly triage meetings to decrease the backlog of unmerged PRs.  This lead to over 2000 PR merges.
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{Jumptap}{March 2013 - June 2013}{Senior Systems Administrator}{Boston, MA}
-\item[] I joined Jumptap to teach the operations team devops practices and to improve their ability to support a large
-clustered trading and advertising platform.
+\item[] I joined Jumptap to help the operations team adopt devops practices and to improve their ability to support a large clustered trading and advertising platform.  I restructured the daily workflow within the operations team, using Kanban, to help transform the internal communications and tracking of work in progress.  We were able to leverage these process changes to rebuild large portions of the Puppet automation, replace Perforce with Github Enterprise, and launch a custom deployment system.
 
-\item Restructured the daily workflow for the operations team to improve internal communication and tracking of work in progress.
-\item Worked with the devops team to rebuild much of the Puppet environment, replace Perforce with Github Enterprise, evaluate Openstack and launch a deployment system.
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{EdX}{October 2012 - March 2013}{Devops Engineer}{Cambridge, MA}
-\item[] Bringing my prior Puppet experience to EdX I was able to help the team turn around a difficult automation situation.  I started by rebuilding the Puppet infrastructure from scratch by rewriting all the existing code, and then moved to building Fabric tasks to automate our cloud provisioning and maintenance and our code deployment.
+\item[] Bringing my prior Puppet experience to EdX I was able to help the team turn around a difficult automation situation.  I started by rebuilding the Puppet infrastructure from scratch, rewriting all the existing code, and then moved to building Fabric tasks to automate our cloud provisioning and code deployment.
 
-\item Took ownership of writing weekly reports to the leadership team to improve our internal visibility within the organization.
-\item Introduced Kanban and Agile into the team to help us identify and resolve bottlenecks in our infrastructure delivery pipeline.
-\item Worked with development to scope, build, and test some enhancements to the EdX platform to allow for third party integrations and sandboxing of externally submitted student code.  We also launched several services for engineering, such as RabbitMQ clusters and Splunk.
+Alongside this work I started weekly reports to the leadership team, and adopted  Kanban and Agile techniques within the team in order to help us identify and overcome some bottlenecks in our infrastructure delivery pipeline.  Lastly, I worked closely with development to scope, build, and test some enhancements to the EdX platform to allow for third party integrations and sandboxing of externally submitted student code.
 \end{rSubsection}
 
 \begin{rSubsection}{SilverSky}{June 2011 - October 2012}{Team Lead, Operations}{Boston, MA}
-\item[] Leading a devops team of three I built a new RHEL based environment to provision and fully automate over 250 servers.  Once this was launched I switched to mentoring junior members of operations in devops practices, helping the team to support and eventually expand the automation we built.
+\item[] In order to pass an FDIC FFIEC audit, I led a team of three devops engineers dedicated to fully automating all provisioning, deployment, and ongoing operations.
 
-\item Built a multi-datacenter distributed Puppet environment with 110 custom modules to handle all existing services within SilverSky.
-\item Organized training sessions for 12 members of operations in devops practices in which they learned to write Puppet modules, unit tests, best practices for provisioning and deployment, and Kanban workflows.
-\item Worked closely with the Boston development team to design and launch an EC2 based development environment used by over thirty engineers.  This included automating and deploying Oracle and other services for on demand instances.
+My team built a new multi-datacenter Puppet deployment in order to rebuild and automate all existing servers across physical and cloud environments.  We worked closely with the existing operations team to mentor junior members and spread devops practices.  This consisted of training sessions in writing Puppet modules, writing unit and acceptance tests, automated provisioning and deployment techniques, and adopting Kanban and Agile workflows.  This work led to successfully passing the audit.
 \end{rSubsection}
 
 \begin{rSubsection}{Harvard Law School}{Febuary 2008 - June 2011}{Senior Systems Administrator}{Cambridge, MA}
-\item[] As part of the operations team at HLS, I introduced automation into the environment for the first time.  I built a rapid provisioning system and used it to rebuild all manually maintained system in a fully automated fashion.
+\item[] As part of the operations team at HLS, I introduced automation into the environment for the first time.  I built a provisioning system, and then used it to rebuild all manually maintained systems in a fully automated fashion.  This allowed us to replace 35 physical servers with 65 virtual servers, reducing delivery time of new instances from 1 week to 10 minutes.
 
-\item I replaced 35 physical servers with 65 virtual servers, which reduced the server build time from 1 week to 10 minutes and decreased OPEX.
-\item Worked closely with external teams, such as the Communications department, to launch the new Harvard Law website.  We did this with zero downtime.
-\item Owned the operations role in the development, deployment, and maintenance of the new identity management system. This system manages all student accounts, information, and lifecycle during their time at HLS.
+Other work included launching the new Harvard Law website with zero downtime, and tightly integrating operations with development throughout the multi-year development of the identity management system that manages the lifecycle of student, staff, and faculty accounts and data throughout their tenure at HLS.
 \end{rSubsection}
 
 \begin{center}
