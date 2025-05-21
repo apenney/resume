@@ -29,8 +29,8 @@
 \pagestyle{empty} % Suppress page numbers
 
 \usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text]{Adobe Garamond Pro}
+\defaultfontfeatures{Ligatures=TeX}
+\setromanfont[Ligatures=TeX]{EB Garamond}
 \usepackage[activate={true,nocompatibility},final,tracking=true,factor=1100,stretch=10,shrink=10]{microtype}
 
 %----------------------------------------------------------------------------------------
@@ -40,7 +40,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\textemdash$} % Set default address separator to a diamond
+\def \addressSep {$-$} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
