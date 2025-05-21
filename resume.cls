@@ -31,7 +31,7 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
 \setromanfont[Ligatures=TeX]{EB Garamond}
-\usepackage[activate={true,nocompatibility},final,tracking=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[final,tracking=true,stretch=10,shrink=10]{microtype}
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
@@ -121,8 +121,7 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0.8em} % \cdot used for bullets, no indentation
-   \itemsep -0.35em \vspace{-0.35em} % Compress items in list together for aesthetics
+  \begin{list}{}{\leftmargin=0.8em \itemsep -0.35em \vspace{-0.35em}} % Start a new list with an indentation but no bullet
   }{
   \end{list}
   \vspace{0.4em} % Some space after the list of bullet points
