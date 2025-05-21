@@ -7,8 +7,8 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \name{Ashley Penney} % Your name
-\address{Lake Jackson, TX  \\ (978)-489-4019 \\ apenney@untaken.net} % Your address
-
+\address{Lake Jackson, TX} 
+\address{(978) 489-4019 \\ apenney@untaken.net} % Your phone number and email
 
 \begin{document}
 
@@ -18,44 +18,45 @@
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Release) }{Oct 2021 -- Present}{Integration Engineer}{Remote}
-
-\item[]  Having previously been the first customer of Release, I was intimately involved in shaping
-the initial feature set.  Eventually, I joined to help found the integration, customer success, and onboarding functions.  Being a tiny startup, this involved everything from
-being involved in sales calls, demos, hiring other members of the team, all the way through to
-directly contributing features and fixes to the product itself.
-
-The product involved Kubernetes clusters built in customer accounts, and our team was also
-responsible for all aspects of those clusters, including observability, upgrades, and all other aspects of
-running dozens of Kubernetes clusters in production.
+\begin{rSubsection}{Tesorio}{Apr 2024 - Present}{Head of Devops}{Remote}
+\item[] At Tesorio, the Devops team and I have been working to modernize much of the technology behind the scenes. This has included overhauling how we manage Terraform, Kubernetes, CI, and rebuilding our complex deployment system on top of ArgoCD and Kargo.  We've finished a migration off Heroku, drastically improved our reliability and invested significant effort in performance engineering.
 
 \end{rSubsection}
 
-
-\begin{rSubsection}{Beeswax (acquired by Comcast) }{August 2020 -- x}{Director of SRE}{Remote}
-
-\item[]  At Beeswax, I inherited the SRE team from the previous manager (the CTO) and overhauled our planning, processes, and priorities to improve our ability to deliver on slipping commitments.
-
-During my time at Beeswax we modernized our loadbalancer layer (millions of requests a second), migrated to Kubernetes to replace thousands of VMs, replaced our observability stack, overhauled our CI/CD systems, and broadly delivered on commitments to the business.
-
+\begin{rSubsection}{Monad}{May 2023 -- Apr 2024}{Head of Infrastructure}{Remote}
+\item[] Previously a customer of mine at Release, I joined Monad to help rework the infrastructure, as well as build out on-prem deployments for customers.  With a team of just two engineers, we've completely rebuilt the IaC automation, overhauled observability, revamped the test and deployment pipelines, and rolled out several large projects to add new infrastructure components for engineers (Spark being one of the larger ones).
 \end{rSubsection}
 
-\begin{rSubsection}{Simon Data}{April 2019 -- Present}{Head Of Devops}{Remote}
+\begin{rSubsection}{Anomalo}{March 2023 -- May 2023}{Senior Software Engineer}{Remote}
+\item[] I rejoined my VP of Engineering from Beeswax to help scale out and improve the infrastructure at Anomalo.  Since joining I rolled out observability via Datadog, revamped most of the build system, improved our CI/CD posture, as well as worked closely with developers to improve their development environments.
 
-\item[] At Simon, I founded and led the devops team.  We took on the challenge of modernizing the developer tooling experience.  This was a combination of introducing modern observability tools, reworking the CI/CD pipelines, migrating to docker as a runtime, and updating and upgrading systems across the board.  The team has remained small, with just myself and two reports, but we've been able to build a solid foundation for the future.
+Shortly after joining my boss was let go, and plans for the future changed.
+\end{rSubsection}
 
+\begin{rSubsection}{Release }{October 2021 -- March 2023}{Integration Engineer}{Remote}
+\item[]Having previously been the first customer of Release, I was intimately involved in shaping the initial feature set.  Eventually, I joined to help found the integration, customer success, and customer onboarding functions.  Being a tiny startup, this involved everything from being involved in sales calls, demos, hiring other members of the team, all the way through to directly contributing features and fixes to the product itself.
+
+The product involved Kubernetes clusters built in customer accounts, and our team was also responsible for all aspects of those clusters, including observability, upgrades, and all other aspects of running dozens of Kubernetes clusters in production.
+\end{rSubsection}
+
+\begin{rSubsection}{Beeswax (Now Comcast)}{August 2020 -- October 2021}{Director of SRE}{Remote}
+\item[]At Beeswax, I inherited the SRE team from the previous manager (the CTO) and overhauled planning, processes, and priorities to improve the teams ability to deliver on slipping commitments.
+
+During my tenure we modernized our loadbalancer layer (with a ~10x perf improvement), migrated to Kubernetes for container orchestration, replaced our observability stack, overhauled CI/CD, upgraded and improved the Aerospike clusters.  We achieved all commitments made to the business on time.
+\end{rSubsection}
+
+\begin{rSubsection}{Simon Data}{April 2019 -- August 2020}{Head Of Devops}{Remote}
+\item[]At Simon, I founded and led the devops team. Focused primarily on modernizing the developer tooling experience, we introduced modern observability tools, reworked the CI/CD pipeline, migrated services to docker, and caught up on years of tech debt.  The team remained small, with just two engineers, but had massive impact on the ability of developers to build and deliver services.
 \end{rSubsection}
 
 \begin{rSubsection}{Everquote}{June 2018 -- April 2019}{VP of Infrastructure}{Cambridge, MA}
-
 \item[] At Everquote, I led the transformation from an outdated "ops team" model to an
-  SRE model.  The two teams I lead build self service components for the engineering
+  SRE model.  The two teams I led build self service components for the engineering
   teams and own the "patterns" used throughout the organization to build, deploy, and
-  operate the 150+ services that compromise the Everquote platform.  I divide my time
+  operate the 150+ services that compromise the Everquote platform.  I divided my time
   between coaching the team, managing infrastructure spend across the
   organization, coordinating across engineering teams, and planning for new
   self service capabilities.
-
 \end{rSubsection}
 
 \begin{rSubsection}{Cota Healthcare}{December 2017 -- June 2018}{VP of Infrastructure}{New York, NY}
@@ -65,11 +66,9 @@ During my time at Beeswax we modernized our loadbalancer layer (millions of requ
   datasets to guide treatments and research.  During my time at Cota I led a overhaul
   in how services were built, deployed, and operated.  This included a cloud migration,
   deployment of Kubernetes, and process changes to software development.
-
 \end{rSubsection}
 
 \begin{rSubsection}{Maxwell Health}{July 2016 -- December 2017}{Director of Infrastructure}{Boston, MA}
-
 \item[] At Maxwell Health, I turned around an operations team in crisis.  After
   hiring to bring the team up to full capacity, we built up the infrastructure
   to turn a six week lead time for servers into an instant self service model
@@ -80,7 +79,6 @@ I split my time between hands on work, such as core infrastructure building,
   build and deployment pipelines, as well as taking part in SOC2/HIPAA
   compliance work, product strategy planning, and implementing a Production
   Readiness Review process.
-
 \end{rSubsection}
 
 \begin{rSubsection}{nToggle}{January 2015 -- July 2016}{Techops Manager}{Boston, MA}
@@ -90,12 +88,7 @@ I split my time between hands on work, such as core infrastructure building,
   our customers.
 
 I designed, and built, our loadbalancer-less (anycast backed) datacenter design
-  to deliver our high performance, low latency, platform.  Capable of
-  processing millions of QPS in real time, our platform has helped a variety of
-  bidders to significantly reduce their traffic, raise their bid rates, and
-  improve the delivery of campaigns to drive significant revenue upside.  
-
-I split my time between hands-on engineering work and managing the operations
+  to deliver our high performance, low latency, platform.  I also split my time between hands-on engineering work and managing the operations
   team.  This included hiring budgets, cost models and board presentations
   around CAPEX and OPEX spend, as well as vendor relationships and pre-sales
   engineering work with our customers to accurately model their current
@@ -104,21 +97,9 @@ I split my time between hands-on engineering work and managing the operations
 
 \end{rSubsection}
 
-\begin{rSubsection}{Metacloud}{September 2014 -- January 2015}{Senior Software Engineer}{Pasadena, CA}
-
-\item[] I joined the engineering team at Metacloud to transform the aging QA
-  environment.  This was previously managed by hand and I spent several months
-  building out Chef automation to rebuild and scale out the testing
-  infrastructure.  This eventually led to a migration that reduced testing
-  cycles from full days to less than an hour.  Metacloud was acquired by Cisco
-  during this time.
-
-\end{rSubsection}
-
 \begin{center}
-Prior Developer roles include: Puppet
-Prior "Devops/SRE" roles include: Jumptap, Edx, SilverSky, Harvard Law School,\\
-Prior roles in Europe: School, NTT Europe Online, MessageLabs, Tiscali, Yahoo!, Versatel, Interxion, and Speedport.\\
+Prior "Devops" roles include: Metacloud, Puppetlabs, Jumptap, Edx, SilverSky, Harvard Law School\\
+Prior roles in Europe: School, NTT Europe Online, MessageLabs, Tiscali, Yahoo!, Versatel, Interxion, and Speedport\\
 \textit{Please ask for an expanded resume covering those positions if you're interested in details.}
 \end{center}
 
